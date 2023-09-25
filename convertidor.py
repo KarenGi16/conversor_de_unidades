@@ -8,3 +8,119 @@
 """ Desde la rama main o master subir al nuevo repositorio de github llamado conversor_de_unidades. (1 punto) """
 
 """ Recuerda que cada uno de los módulos, deben incluir el bloque if __name__ == "__main__" para sus pruebas en cada módulo. """
+import temperatura
+import masa
+import tiempo
+
+
+def main():
+    while True:
+        # Muestra el menú principal
+        print("Menú Principal:")
+        print("[1] Convertir Celsius a Fahrenheit")
+        print("[2] Convertir Celsius a Kelvin")
+        print("[3] Convertir Fahrenheit a Celsius")
+        print("[4] Convertir Fahrenheit a Kelvin")
+        print("[5] Convertir Kelvin a Celsius ")
+        print("[6] Convertir Kelvin a Fahrenheit ")
+        print("[7] Convertir Kilogramos a Gramos")
+        print("[8] Convertir Kilogramos a Toneladas")
+        print("[9] Convertir Gramos a Kilogramos")
+        print("[10] Convertir Gramos a Toneladas")
+        print("[11] Convertir Toneladas a Kilogramos")
+        print("[12] Convertir Toneladas a Gramos")
+        print("[13] Convertir Segundos a Minutos ")
+        print("[14] Convertir Segundos a Horas")
+        print("[15] Convertir Minutos a Horas")
+        print("[16] Convertir Minutos a Horas")
+        print("[17] Convertir Horas a Horas")
+        print("[18] Convertir Horas a Minutos")
+        print("[0] Salir")
+        
+        # Solicita al usuario que ingrese una opción
+        opcion = input("Ingrese una opción: ")
+        valorInicial= int(input("Ingresa numero: "))
+        try:
+            opcion = int(opcion)
+            if opcion == 0:
+                print("Saliendo del programa. ¡Hasta luego!")
+                break
+            elif opcion == 1:
+                resultado= temperatura.celsius_a_fahrenheit(valorInicial)
+                print("El resultado es: ", resultado)
+            
+            elif opcion == 2:
+                resultado= temperatura.celsius_a_kelvin(valorInicial)
+                print("El resultado es: ", resultado)
+            
+            elif opcion == 3:
+                resultado= temperatura.fahrenheit_a_celsius(valorInicial)
+                print("El resultado es: ", resultado)
+
+            elif opcion == 4:
+                resultado= temperatura.fahrenheit_a_kelvin(valorInicial)
+                print("El resultado es: ", resultado)
+            
+            elif opcion == 5:
+                resultado= temperatura.kelvin_a_celsius(valorInicial)
+                print("El resultado es: ", resultado)
+            
+            elif opcion == 6:
+                resultado= temperatura.kelvin_a_fahrenheit(valorInicial)
+                print("El resultado es: ", resultado)
+            
+            elif opcion == 7:
+                resultado= masa.Kilogramos_a_Gramos(valorInicial)
+                print("El resultado es: ", resultado)
+
+            elif opcion == 8:
+                resultado= masa.Kilogramos_a_Toneladas(valorInicial)
+                print("El resultado es: ", resultado)
+
+            elif opcion == 9:
+                resultado= masa.Gramos_a_Kilogramos(valorInicial)
+                print("El resultado es: ", resultado)
+
+            elif opcion == 10:
+                resultado= masa.Gramos_a_Toneladas(valorInicial)
+                print("El resultado es: ", resultado)
+
+            elif opcion == 11:
+                resultado= masa.Toneladas_a_Kilogramos(valorInicial)
+                print("El resultado es: ", resultado)
+            
+            elif opcion == 12:
+                resultado= masa.Toneladas_a_Gramos(valorInicial)
+                print("El resultado es: ", resultado)
+            
+            elif opcion == 13:
+                resultado= tiempo.Segundos_a_Minutos(valorInicial)
+                print("El resultado es: ", resultado)
+            
+            elif opcion == 14:
+                resultado= tiempo.Segundos_a_Horas(valorInicial)
+                print("El resultado es: ", resultado)
+            
+            elif opcion == 15:
+                resultado= tiempo.Minutos_a_Segundos(valorInicial)
+                print("El resultado es: ", resultado)
+
+            elif opcion == 16:
+                resultado= tiempo.Minutos_a_Horas(valorInicial)
+                print("El resultado es: ", resultado)
+
+            elif opcion == 17:
+                resultado= tiempo.Horas_a_Segundos(valorInicial)
+                print("El resultado es: ", resultado)
+
+            elif opcion == 18:
+                resultado= tiempo.Horas_a_Minutos(valorInicial)
+                print("El resultado es: ", resultado)
+             
+            else:
+                print("Opción no válida. Por favor, ingrese una opción válida.")
+        except ValueError:
+            print("Solo puede ingresar valores numéricos.")
+
+if __name__ == "__main__":
+    main()
