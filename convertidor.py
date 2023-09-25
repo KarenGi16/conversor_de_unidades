@@ -31,9 +31,9 @@ def main():
         print("[12] Convertir Toneladas a Gramos")
         print("[13] Convertir Segundos a Minutos ")
         print("[14] Convertir Segundos a Horas")
-        print("[15] Convertir Minutos a Horas")
+        print("[15] Convertir Minutos a Segundos")
         print("[16] Convertir Minutos a Horas")
-        print("[17] Convertir Horas a Horas")
+        print("[17] Convertir Horas a Segundos")
         print("[18] Convertir Horas a Minutos")
         print("[0] Salir")
         

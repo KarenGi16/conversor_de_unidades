@@ -22,3 +22,12 @@ def Toneladas_a_Kilogramos(t):
 def Toneladas_a_Gramos(t):
     g = t * 1000000
     return g
+
+if __name__ == "__main__":
+    print("Ejemplos de conversión de masa:")
+    print("25 kg a gramos:", Kilogramos_a_Gramos(25))
+    print("98 kg a toneladas:", Kilogramos_a_Toneladas(98))
+    print("23 g a kilogramos:", Gramos_a_Kilogramos(23))
+    print("273 g a toneladas:", Gramos_a_Toneladas(273))
+    print("40 t a kilogramos:", Toneladas_a_Kilogramos(40))
+    print("100 t a gramos:", Toneladas_a_Gramos(100))
